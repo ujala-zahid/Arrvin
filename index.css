@@ -1,0 +1,186 @@
+
+.carousel-item{
+      height: 700px;
+      min-height: 300px;
+      background: no-repeat center center scroll;
+      --webkit-background-size: cover;
+        background-size: cover;
+}
+.carousel-caption{
+    bottom: 200px;
+}
+.carousel-caption h5{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 45px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 25px;
+      color: rgb(241, 141, 9);
+      text-align: center;
+}
+.carousel-caption h5:hover{
+      color: #fff;
+}
+.carousel-caption p{
+      width: 60%;
+      margin: auto;
+      line-height: 1.9;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgb(255, 255, 255);
+}
+.carousel-caption p:hover{
+       color: black;
+}
+.carousel-caption a{
+      display: inline-block;
+    padding: 13px 40px;
+    background: rgb(255, 175, 2);
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+carousel-caption a:hover{
+     /* color: #8a490d;*/
+     transform: translateX(10px);
+     border: 2px solid white;
+     background: transparent;
+     color: white;
+}
+/*.navbar-brand{
+      color: #ff7b00;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+}
+.navbar-brand:hover{
+      color: #fff;
+}
+.navbar-nav a{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+      letter-spacing: 1px;
+}
+.navbar-nav a:hover{
+      color: black;
+}*/
+.navbar-nav a{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+} 
+.navbar-light .navbar-brand{
+      font-family: 'Times New Roman', Times, serif;
+      color: rgb(255, 136, 0);
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+       color: #fff;
+}
+.navbar-light .navbar-nav  .nav-link{
+      color: #fff;
+}
+.navbar-nav{
+      text-align: center;
+}
+.nav-link{
+      padding: 2rem 1rem;
+}
+.navbar-light .navbar-nav  .nav-link:focus, .navbar-light 
+.navbar-nav .nav-link:hover {
+      color: #fff !important;
+}
+.w-100{
+      height: 100vh;
+}
+@media only screen and (max-width: 767px) {
+       .navbar-nav.ml-auto{
+            background: rgba(0, 0, 0, 0.5);
+       }
+       .navbar-toggler{
+            padding: 1px 5px;
+            font-size: 18px;
+            line-height: 0.3;
+            background: #fff;
+       }
+
+}
+.wrapper{
+      padding: 10px 10%;
+}
+.card-area{
+      padding: 50px 0;
+}
+.box-area{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      margin-top: 50px;
+}
+.box{
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.50);
+}
+.box img{
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+      transition: transform 0.5s;
+}
+.overlay{
+      height: 0;
+      width: 100%;
+      background: linear-gradient(transparent, #1c1c1c 58%);
+      border-radius: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      overflow: hidden;
+      display: flex;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 40px;
+      text-align: center;
+      font-size: 14px;
+      transition: height 0.5s;
+}
+.overlay h3{
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin-top: 80%;
+      font-size: 30px;
+      letter-spacing: 2px;
+}
+.overlay a{
+      margin-top: 10px;
+      color: #262626;
+      text-decoration: none;
+      font-size: 14px;
+      background: #fff;
+      border-radius: 50px;
+      text-align: center;
+      padding: 5px 15px;
+}
+.boxLhover img{
+      transform: scale(1.2);
+}
+.box:hover .overlay{
+      height: 100%;
+}
